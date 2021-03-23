@@ -1,0 +1,47 @@
+body{
+    background-color: bisque;
+    height:100%;
+}
+header{
+    background-color: grey;
+    height: 22%;
+    display: flex;
+    flex-direction: row;
+
+}
+#logo{
+    background-color: darkseagreen;
+    width:50%;
+}
+.filtres{
+
+    list-style-type: none;
+    
+}
+nav{
+    background-color: dodgerblue;
+    width:50%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+nav ul{
+    width:100%;
+    list-style-type: none;
+    background-color: fuchsia;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section1{
+    background-color: coral;
+    height: 34%;
+}
+.section2{
+    background-color: darkgreen;
+    height: 28%;
+}
+footer{
+    background-color: darkseagreen;
+    height:12%;
+}
