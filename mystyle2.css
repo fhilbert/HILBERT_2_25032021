@@ -84,7 +84,7 @@ article{
     background-color: indianred;
     
 }
-.contenu-etiquettes{
+.contenu_etiqette{
     width:30%;
     height:40%;
     background-color: #fff;
@@ -124,7 +124,7 @@ aside{
   align-items: baseline;
 }
 
-.aside-contenu-etiquettes{
+.aside-contenu_etiqette{
   display:flex;
   height:23%;
   background-color: #fff;
@@ -172,7 +172,7 @@ aside{
     flex-direction:column;
   /*  flex-flow:column wrap;*/
 }
-.section2-contenu-etiquettes{
+.section2-contenu_etiqette{
     border:5px solid gray;
 }
 footer{
