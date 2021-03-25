@@ -22,41 +22,43 @@ h1,h2,.graph{
 }
 header h1{
   font-size: 1.2em;
+  display:block;
 }
-.container-filtres{
-  background-color: dimgray;
+.filters{
+  background-color: cornsilk;
   max-width: 1000px;
   display:flex;
-                     /* align-items: center;*/
+  justify-content: space-between;
   font-size: 1.2em;
   color:black;
-}
-.filtres{
-  display:flex;
 }   
-.economique{
+.inside_filters{
   border: 2px solid black;
+  border-radius: 0 10rem 10rem 0;
+  border-left-style: none;
   display:flex;
+  justify-content: center;
+  align-items: center;
 }  
-.familial{
-  border: 2px solid black;
-  /*  display:flex;*/
-}    
-.romantique{
-  border: 2px solid black;
-/*    display:flex;*/ 
-}  
-.animaux{    
-    border: 2px solid black;
- /*   display:flex;*/
-}    
+.inside_filters:hover{
+  border: 5px solid red;
+}
+.text_filters{
+  padding:0 10px 0 10px;
+  font-weight: bold;
+}
 .logo {
   background-color: rgb(220,236,253);
   border: 2px solid black;
-  padding:5px;
+  width:50px;
+  height:100%;
+  /*height:50px;*/
   border-radius: 50%;
+  margin-left: -25px;
   color:#0065FC;
-  display: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 nav{
   display: block;
@@ -71,7 +73,8 @@ article{
   background-color: grey;
   display:flex;
   flex-direction: column;
-  padding: 2%;
+  justify-content: space-between;
+  padding: 20px 20px;
 }
 .labels{
   height:380px;
@@ -111,8 +114,9 @@ aside{
   height:90%;
   display:flex;
   flex-direction:column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items:center;
+  padding: 20px 20px;
 }
 .aside_title{
   width: 290px;
