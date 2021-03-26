@@ -1,4 +1,7 @@
+
+
 body{
+  margin-left: 20px;
   display:flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -7,7 +10,7 @@ body{
 }
 header{
   background-color: burlywood;
-  height: 350px;
+  height: 400px;
   display:flex;
   flex-direction: column;
   justify-content: space-around;
@@ -23,6 +26,39 @@ h1,h2,.graph{
 header h1{
   font-size: 1.2em;
   display:block;
+}
+.search{
+  background-color: cornsilk;
+  border-radius: 15px;
+  border: 2px solid black;
+  height:50px;
+  width:400px;
+  font-weight: bold;
+  font-size: 1.2em;
+  display:flex;
+  justify-content: space-between;
+}
+.location{
+  background-color: grey;
+  padding:0 25px 0 25px;
+  height:100%;
+  border-radius:13px 0px 0px 13px;
+  border-right: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+.search_input{
+  display: flex;
+  align-items: center;
+}
+.search_text{
+  background-color:#0065FC;
+  color:#fff;
+  height:100%;
+  border-radius:0px 13px 13px 0px;
+  padding:0 10px 0 10px;
+  display: flex;
+  align-items: center;
 }
 .filters{
   background-color: cornsilk;
@@ -41,11 +77,32 @@ header h1{
   align-items: center;
 }  
 .inside_filters:hover{
-  border: 5px solid red;
+  background-color:green;
+  color: purple;
 }
 .text_filters{
   padding:0 10px 0 10px;
   font-weight: bold;
+  background-color: brown;
+}
+.information{
+  display: flex;
+  align-items: center;
+  height:40px;
+  max-width: 600px;
+}
+.logo_i{
+  background-color: rgb(220,236,253);
+  border: 2px solid black;
+  width:25px;
+  /*height:100%;*/
+  height:25px;
+  border-radius: 50%;
+  color:#0065FC;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
 }
 .logo {
   background-color: rgb(220,236,253);
@@ -62,10 +119,10 @@ header h1{
 }
 nav{
   display: block;
+  
 }
 .section1{
   display:flex;
-  margin: 2% 2%;
 }
 article{
   width:65%;
@@ -101,7 +158,7 @@ article{
 .photo{
   width:100%;
   height:60%;
-  border-radius:11px 11px 0px 0px;
+  border-radius:15px 15px 0px 0px;
   object-fit: cover;
 }
 aside{
@@ -110,7 +167,7 @@ aside{
   margin-left: 3%;  
   width: 32%;
 }
-.aside_labels{
+.aside_label{
   height:90%;
   display:flex;
   flex-direction:column;
@@ -154,10 +211,9 @@ aside{
 }
 .section2{
   background-color: cornflowerblue;
-  height: 400px;
-  margin: 2% 2%;
+  height: 410px;
 }
-.activites{
+.activities{
   height: 365px;
   background-color: salmon;
   border-radius:15px;
@@ -182,16 +238,57 @@ aside{
   align-items: center;
 }
 footer{
-  background-color: darkgoldenrod;
+  background-color: grey;
   display: flex;
   line-height: 2.2em;
 }
 ul{
   list-style-type: none;
 }
-.noshebergements,.assistance{
-  margin-left: 10em;
+/*---- media queries ------------------------------------------*/
+@media screen and (max-width: 1024px)
+{
+body{
+  display:inline;
 }
+header{
+  display:inline;
+}
+.filters{
+ /* display:inline; */
+}
+.section1{
+  display:flex;
+  flex-direction: column-reverse;
+}
+.labels{
+  display:inline;
+  height:100%;
+}
+.inside_label,.aside_inside_label{
+  width:320px;
+  height:190px;
+}
+article,aside{
+  width:100%;
+}
+.section2{
+  height:100%;
+}
+.activities{
+  display:inline;
+  height:100%;
+}
+.section2_inside_label{
+  width:320px;
+  height:180px;
+}
+footer{
+  display:inline;
+  background-color: grey;
+}
+}
+
 
 /*
 <!DOCTYPE html>
