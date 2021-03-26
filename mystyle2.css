@@ -1,7 +1,7 @@
 
 
 body{
-  margin-left: 20px;
+  margin: 20px 20px;
   display:flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -60,6 +60,10 @@ header h1{
   display: flex;
   align-items: center;
 }
+#search{
+  display:none;
+}
+
 .filters{
   background-color: cornsilk;
   max-width: 1000px;
@@ -107,9 +111,9 @@ header h1{
 .logo {
   background-color: rgb(220,236,253);
   border: 2px solid black;
-  width:50px;
+  width:3vw;
+  /*height:100%;*/
   height:100%;
-  /*height:50px;*/
   border-radius: 50%;
   margin-left: -25px;
   color:#0065FC;
@@ -123,6 +127,7 @@ nav{
 }
 .section1{
   display:flex;
+  
 }
 article{
   width:65%;
@@ -131,14 +136,13 @@ article{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 45px 45px;
 }
-.labels{
-  height:380px;
+.article_label{
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between; 
-  align-content: space-around;  /*PAS SUR */
+  align-content: space-between;  /*PAS SUR */
   background-color: rgb(218, 182, 182);
 }
 .inside_label{
@@ -166,24 +170,23 @@ aside{
   background-color: grey;
   margin-left: 3%;  
   width: 32%;
+  padding: 45px 45px;
 }
 .aside_label{
-  height:90%;
+  height:100%;
   display:flex;
   flex-direction:column;
   justify-content: space-between;
-  align-items:center;
-  padding: 20px 20px;
 }
 .aside_title{
-  width: 290px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 .aside_inside_label{
   display:flex;
-  width:290px;
+  width: 310px;
   height:120px;
   background-color: #fff;
   border: 5px solid #FFF;
@@ -213,7 +216,7 @@ aside{
   background-color: cornflowerblue;
   height: 410px;
 }
-.activities{
+.activities_label{
   height: 365px;
   background-color: salmon;
   border-radius:15px;
@@ -246,6 +249,7 @@ ul{
   list-style-type: none;
 }
 /*---- media queries ------------------------------------------*/
+/************************************************/
 @media screen and (max-width: 1024px)
 {
 body{
@@ -254,6 +258,18 @@ body{
 header{
   display:inline;
 }
+.search_text{
+  display:none;
+}
+#search{
+  background-color:#0065FC;
+  color:#fff;
+  height:100%;
+  border-radius:0px 13px 13px 0px;
+  padding:0 10px 0 10px;
+  display: flex;
+  align-items: center;
+}
 .filters{
  /* display:inline; */
 }
@@ -261,28 +277,35 @@ header{
   display:flex;
   flex-direction: column-reverse;
 }
-.labels{
-  display:inline;
+.article_label{
+
   height:100%;
 }
 .inside_label,.aside_inside_label{
   width:320px;
   height:190px;
 }
-article,aside{
+article,aside,.activities_label{
   width:100%;
+  border-radius: 0px;
+  background-color: grey;
+  margin-left: 0%;
+  
+
 }
 .section2{
   height:100%;
 }
-.activities{
-  display:inline;
-  height:100%;
+.activities_label{
+ /*height:100%;*/
 }
 .section2_inside_label{
   width:320px;
   height:180px;
 }
+.section2_photo{
+  width: 100%;
+
 footer{
   display:inline;
   background-color: grey;
