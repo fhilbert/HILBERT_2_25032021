@@ -1,5 +1,3 @@
-
-
 body{
   margin: 20px 20px;
   display:flex;
@@ -14,6 +12,10 @@ header{
   display:flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.top{
+  display:flex;
+  justify-content: space-between;
 }
 .ligne1{
   font-weight: bold;
@@ -99,7 +101,6 @@ header h1{
   background-color: rgb(220,236,253);
   border: 2px solid black;
   width:25px;
-  /*height:100%;*/
   height:25px;
   border-radius: 50%;
   color:#0065FC;
@@ -112,7 +113,6 @@ header h1{
   background-color: rgb(220,236,253);
   border: 2px solid black;
   width:3vw;
-  /*height:100%;*/
   height:100%;
   border-radius: 50%;
   margin-left: -25px;
@@ -123,11 +123,15 @@ header h1{
 }
 nav{
   display: block;
-  
+  display: flex;
+  width:35%;
+  justify-content: space-around;
+}
+nav a{
+  text-decoration: none;
 }
 .section1{
   display:flex;
-  
 }
 article{
   width:65%;
@@ -136,13 +140,15 @@ article{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 45px 45px;
+  padding: 20px 45px 20px 45px;
 }
 .article_label{
+  /*height:410px;*/
+  height:100%;
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between; 
-  align-content: space-between;  /*PAS SUR */
+  align-content: space-between; 
   background-color: rgb(218, 182, 182);
 }
 .inside_label{
@@ -151,6 +157,9 @@ article{
   background-color: #fff;
   border: 5px solid #FFF;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 .inside_label:active,.aside_inside_label:active,.section2_inside_label:active
 {
@@ -168,9 +177,9 @@ article{
 aside{
   border-radius: 15px;
   background-color: grey;
-  margin-left: 3%;  
+  margin-left: 5%;  
   width: 32%;
-  padding: 45px 45px;
+  padding: 20px 45px 0px 45px;
 }
 .aside_label{
   height:100%;
@@ -179,7 +188,7 @@ aside{
   justify-content: space-between;
 }
 .aside_title{
-  width: 100%;
+  width:320px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -191,6 +200,7 @@ aside{
   background-color: #fff;
   border: 5px solid #FFF;
   border-radius: 15px;
+  margin-bottom: 5%;
 }
 .aside_photo{
   height:100%;
@@ -214,10 +224,11 @@ aside{
 }
 .section2{
   background-color: cornflowerblue;
-  height: 410px;
+  display: flex;
+  flex-direction: column;
 }
 .activities_label{
-  height: 365px;
+  height: 375px;
   background-color: salmon;
   border-radius:15px;
   display: flex;
@@ -235,7 +246,7 @@ aside{
   object-fit: cover;
 }
 .section2_texte{
-  height:45px;
+  height:55px;
   padding-left: 25px;
   display:flex;
   align-items: center;
@@ -250,10 +261,19 @@ ul{
 }
 /*---- media queries ------------------------------------------*/
 /************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
 @media screen and (max-width: 1024px)
 {
 body{
   display:inline;
+
 }
 header{
   display:inline;
@@ -272,6 +292,8 @@ header{
 }
 .filters{
  /* display:inline; */
+ flex-wrap:wrap;
+
 }
 .section1{
   display:flex;
@@ -283,7 +305,7 @@ header{
 }
 .inside_label,.aside_inside_label{
   width:320px;
-  height:190px;
+  height:195px;
 }
 article,aside,.activities_label{
   width:100%;
@@ -294,17 +316,18 @@ article,aside,.activities_label{
 
 }
 .section2{
-  height:100%;
+  
 }
 .activities_label{
- /*height:100%;*/
+  height:100%;
 }
 .section2_inside_label{
   width:320px;
-  height:180px;
+  height:190px;
 }
 .section2_photo{
-  width: 100%;
+  width:100%;
+  height: 140px;
 
 footer{
   display:inline;
