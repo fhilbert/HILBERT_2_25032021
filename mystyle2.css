@@ -28,6 +28,8 @@ h1,h2,.graph{
 header h1{
   font-size: 1.2em;
   display:block;
+  margin-right:6%;
+
 }
 .search{
   background-color: cornsilk;
@@ -42,12 +44,13 @@ header h1{
 }
 .location{
   background-color: grey;
-  padding:0 25px 0 25px;
   height:100%;
+  width:50px;
   border-radius:13px 0px 0px 13px;
   border-right: 2px solid black;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .search_input{
   display: flex;
@@ -70,11 +73,12 @@ header h1{
   background-color: cornsilk;
   max-width: 1000px;
   display:flex;
-  justify-content: space-between;
   font-size: 1.2em;
   color:black;
 }   
 .inside_filters{
+  height:50px;
+  margin-right:6%;
   border: 2px solid black;
   border-radius: 0 10rem 10rem 0;
   border-left-style: none;
@@ -112,8 +116,8 @@ header h1{
 .logo {
   background-color: rgb(220,236,253);
   border: 2px solid black;
-  width:3vw;
-  height:100%;
+  width:50px;
+  height:50px;
   border-radius: 50%;
   margin-left: -25px;
   color:#0065FC;
@@ -272,11 +276,11 @@ ul{
 @media screen and (max-width: 1024px)
 {
 body{
-  display:inline;
+/*  display:inline;*/
 
 }
 header{
-  display:inline;
+/*  display:inline;*/
 }
 .search_text{
   display:none;
@@ -285,10 +289,11 @@ header{
   background-color:#0065FC;
   color:#fff;
   height:100%;
-  border-radius:0px 13px 13px 0px;
-  padding:0 10px 0 10px;
+  width:50px;
+  border-radius: 13px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .filters{
  /* display:inline; */
@@ -303,15 +308,19 @@ header{
 
   height:100%;
 }
-.inside_label,.aside_inside_label{
+.inside_label,.aside_inside_label,.section2_inside_label{
   width:320px;
   height:195px;
+  margin-bottom: 10px;
+
 }
 article,aside,.activities_label{
   width:100%;
+  padding: 0px;
   border-radius: 0px;
   background-color: grey;
   margin-left: 0%;
+  margin-bottom: 10px;
   
 
 }
@@ -330,8 +339,12 @@ article,aside,.activities_label{
   height: 140px;
 
 footer{
-  display:inline;
   background-color: grey;
+}
+footer div ul{
+  color: aquamarine;
+
+
 }
 }
 
