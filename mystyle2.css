@@ -168,7 +168,7 @@ article{
   flex-wrap:wrap;
   justify-content: space-between; 
   align-content: space-between; 
-  background-color: rgb(218, 182, 182);
+  background-color: #F2F2F2
 }
 .insideLabel{
   width:200px;
@@ -195,7 +195,7 @@ article{
 }
 aside{
   border-radius: 15px;
-  background-color: grey;
+  background-color: #F2F2F2;
   margin-left: 2em;  
   padding: 20px 45px 0px 45px;
 }
@@ -238,7 +238,7 @@ aside{
   color: #0065FC;
 }
 .emptyStars{
-  color: yellowgreen;
+  color: #F2F2F2;
 }
 .section2{
   display: flex;
@@ -270,7 +270,7 @@ aside{
   align-items: center;
 }
 footer{
-  background-color: grey;
+  background-color: #F2F2F2;
   display: flex;
   width:100%;
   line-height: 2.2em;
@@ -393,7 +393,7 @@ article,aside,.activitiesLabel{
   width:100%;
   padding: 0px;
   border-radius: 0px;
-  background-color: grey;
+  background-color: #F2F2F2;
   margin-left: 0%;
   margin-bottom: 1em;
 }
@@ -412,7 +412,7 @@ article,aside,.activitiesLabel{
   height: 140px;
 }
 footer{
-  background-color: grey;
+/*  background-color: grey;*/
   display: block;
 }
 }
