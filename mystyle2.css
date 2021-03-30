@@ -1,10 +1,11 @@
 body{
-  margin: 0em 2em 0em 2em;
+ /* margin: 0em 2em 0em 2em;*/
   font-family: "Raleway", sans-serif;
   font-size:14px;
   font-weight: normal;
 }
 header{
+  padding: 0em 2em 0em 2em;
   background-color: burlywood;
 }
 .top{
@@ -16,16 +17,19 @@ nav{
   display: block;
   display: flex;
   width: 35%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   justify-content: space-around;
 }
 a{
+  color:black;
   text-decoration: none;
 } 
+.navHebergements,navSubscribe{
+  color:#0065FC;
+}
 .ligne1{
   margin-top: 1em;
   font-weight: bold;
-  font-size: 2em;
 }
 h1,h2,.graph{
   font-weight: bold;
@@ -34,8 +38,7 @@ h1,h2,.graph{
 header h1{
   font-size: 1.2em;
   display:block;
-  margin-right:6%;
-
+  margin-right:1.5em;
 }
 .search{
   background-color: cornsilk;
@@ -79,13 +82,13 @@ header h1{
 .filters{
   background-color: cornsilk;
   display:flex;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: black;
   margin:2em 0em 2em 0em;
 }   
 .insideFilters{
   height:3em;
-  margin-right:6%;
+  margin-right:1.5em;
   /*border: 2px solid black;*/
   border-radius: 2em;
   display:flex;
@@ -119,6 +122,9 @@ header h1{
   justify-content: center;
   align-items: center;
 }
+.logo i{
+  font-size: 1.3em;
+}
 .information{
   display: flex;
   align-items: center;
@@ -136,6 +142,9 @@ header h1{
   justify-content: center;
   align-items: center;
   margin-right: 1em;
+}
+section{
+  padding: 0em 2em 0em 2em;
 }
 .section1{
   margin-top: 3em;
@@ -171,7 +180,7 @@ article{
 }
 .insideLabel:active,.asideInsideLabel:active,.section2InsideLabel:active
 {
-  border: 5px solid #f2f2f2;
+ /* border: 5px solid #f2f2f2;*/
 }
 .title{
   font-weight: bold;
@@ -185,7 +194,7 @@ article{
 aside{
   border-radius: 15px;
   background-color: grey;
-  margin-left: 5%;  
+  margin-left: 2em;  
   padding: 20px 45px 0px 45px;
 }
 .asideLabel{
@@ -230,12 +239,11 @@ aside{
   color: yellowgreen;
 }
 .section2{
-  background-color: cornflowerblue;
   display: flex;
   flex-direction: column;
 }
 .activitiesLabel{
-  height: 375px;
+  height: 378px;
   background-color: salmon;
   border-radius:15px;
   display: flex;
@@ -282,55 +290,86 @@ ul{
 /************************************************/
 /************************************************/
 /************************************************/
+
+/*-- portables --*/
+@media screen and (max-width: 1024px){ 
+
+}
+/*-- tablettes --*/
+
+@media screen and (max-width: 1024px){
+
+}
+/*-- telephones --*/
+
 @media screen and (max-width: 1024px)
 {
-body{
-/*  display:inline;*/
-width:100%;
+  body{
+    /*  display:inline;*/
+    width:100%;
+    
+  }
+  header{
+    /*  display:inline;*/
+  }
+  #logo{
+    margin-bottom: 1em;
+  }
+  .top{
+    display:inline;
+  }
+  nav{
+    width:100%;
+    display: flex;
+  }
+  .navHebergements{
+    width:50%;
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
 
-}
-header{
-/*  display:inline;*/
-}
-#logo{
- margin-bottom: 1em;
-}
-.top{
-  display:inline;
-}
-nav{
-  width:100%;
- /* justify-content: flex-start;*/
-  padding-bottom: 1em;
-  border-bottom: 3px solid blue;
-}
-.subscribe{
-  display: none;
-}
-nav a{
-  
-}
-.searchText{
-  display:none;
-}
-.search{
-  width:320px;
-}
-#search{
-  background-color:#0065FC;
-  color:#fff;
-  height:100%;
-  width:50px;
-  border-radius: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.filters{
-  flex-wrap:wrap;
+  }
 
-}
-.insideFilters{
+  .navActivities{
+    width:50%;
+    color:black;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+  }
+  .navSubscribe{
+    display: none;
+  }
+  nav a{
+    
+  }
+  .searchText{
+    display:none;
+  }
+  .search{
+    width:320px;
+  }
+  #search{
+    background-color:#0065FC;
+    color:#fff;
+    height:100%;
+    width:50px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filters{
+    flex-wrap:wrap;
+    
+  }
+  .titleFilters{
+    margin-right: 10em;
+  }
+  .insideFilters{
   margin-bottom: 1.5em;
 
 }
