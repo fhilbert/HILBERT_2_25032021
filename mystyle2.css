@@ -65,6 +65,7 @@ header h1{
 .searchInput{
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 .searchText{
   background-color:#0065FC;
@@ -149,6 +150,7 @@ section{
 .section1{
   margin-top: 3em;
   display:flex;
+  margin-bottom: 4em;
 }
 article{
   width:65%;
@@ -241,10 +243,10 @@ aside{
 .section2{
   display: flex;
   flex-direction: column;
+  margin-bottom: 4em;
 }
 .activitiesLabel{
   height: 378px;
-  background-color: salmon;
   border-radius:15px;
   display: flex;
   flex-wrap: wrap;
@@ -255,6 +257,7 @@ aside{
 .section2InsideLabel{
   border-radius: 15px;
   background-color: #fff;
+  box-shadow: 0 0 16px #0000002e; 
 }
 .section2Photo{
   border-radius:15px 15px 0px 0px;
