@@ -1,12 +1,11 @@
 body{
- /* margin: 0em 2em 0em 2em;*/
+  margin: auto;
+  width: 100%;
   font-family: "Raleway", sans-serif;
-  font-size:14px;
-  font-weight: normal;
+  font-size:13px;
 }
 header{
   padding: 0em 2em 0em 2em;
-  background-color: burlywood;
 }
 .top{
   margin-top: 2em;
@@ -41,7 +40,6 @@ header h1{
   margin-right:1.5em;
 }
 .search{
-  background-color: cornsilk;
   border-radius: 1em;
   border: 2px solid black;
   height:3em;
@@ -81,7 +79,6 @@ header h1{
 }
 
 .filters{
-  background-color: cornsilk;
   display:flex;
   font-size: 1.3em;
   color: black;
@@ -90,7 +87,6 @@ header h1{
 .insideFilters{
   height:3em;
   margin-right:1.5em;
-  /*border: 2px solid black;*/
   border-radius: 2em;
   display:flex;
   justify-content: center;
@@ -155,7 +151,7 @@ section{
 article{
   width:65%;
   border-radius: 1.5em;
-  background-color: grey;
+  background-color: #F2F2F2;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -206,15 +202,15 @@ aside{
   justify-content: space-between;
 }
 .asideTitle{
-  width:320px;
+  width:23vw;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 .asideInsideLabel{
   display:flex;
-  width: 310px;
-  height:120px;
+  width: 22.5vw;
+  height:19.5vh;
   background-color: #fff;
   border: 5px solid #FFF;
   border-radius: 15px;
@@ -246,7 +242,7 @@ aside{
   margin-bottom: 4em;
 }
 .activitiesLabel{
-  height: 378px;
+  height: 62.08vh;
   border-radius:15px;
   display: flex;
   flex-wrap: wrap;
@@ -259,7 +255,33 @@ aside{
   background-color: #fff;
   box-shadow: 0 0 16px #0000002e; 
 }
-.section2Photo{
+.section2Photo1{
+  width:21.3vw;
+  height:52.55vh;
+  border-radius:15px 15px 0px 0px;
+  object-fit: cover;
+}
+.section2Photo2{
+  width:21.3vw;
+  height:23.38vh;
+  border-radius:15px 15px 0px 0px;
+  object-fit: cover;
+}
+.section2Photo3{
+  width:21.3vw;
+  height:15.6vh;
+  border-radius:15px 15px 0px 0px;
+  object-fit: cover;
+}
+.section2Photo5{
+  width:21.3vw;
+  height:18.89vh;
+  border-radius:15px 15px 0px 0px;
+  object-fit: cover;
+}
+.section2Photo6{
+  width:21.3vw;
+  height:20.53vh;
   border-radius:15px 15px 0px 0px;
   object-fit: cover;
 }
@@ -309,7 +331,7 @@ ul{
 {
   body{
     /*  display:inline;*/
-    width:100%;
+  
     
   }
   header{
