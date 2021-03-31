@@ -255,35 +255,35 @@ aside{
   background-color: #fff;
   box-shadow: 0 0 16px #0000002e; 
 }
+  width:300px;
 .section2Photo1{
-  width:21.3vw;
-  height:52.55vh;
+  height: 320px;
   border-radius:15px 15px 0px 0px;
   object-fit: cover;
 }
 .section2Photo2{
-  width:21.3vw;
-  height:23.38vh;
+  width:300px;
+  height:145px;
   border-radius:15px 15px 0px 0px;
   object-fit: cover;
 }
 .section2Photo3{
-  width:21.3vw;
-  height:15.6vh;
+  width:300px;
+  height:95px;
   border-radius:15px 15px 0px 0px;
   object-fit: cover;
 }
+.section2Photo4{
+  width:300px;
+  height:115px;
+  object-fit: cover;
+  border-radius:15px 15px 0px 0px;
+}
+  object-fit: cover;
+  border-radius:15px 15px 0px 0px;
+  height:125px;
+  width:300px;
 .section2Photo5{
-  width:21.3vw;
-  height:18.89vh;
-  border-radius:15px 15px 0px 0px;
-  object-fit: cover;
-}
-.section2Photo6{
-  width:21.3vw;
-  height:20.53vh;
-  border-radius:15px 15px 0px 0px;
-  object-fit: cover;
 }
 .section2Texte{
   height:55px;
