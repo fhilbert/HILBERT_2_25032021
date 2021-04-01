@@ -1,7 +1,7 @@
 body{
-  margin: auto;
-  width: 100%;
+ /* margin: 0em 2em 0em 2em;debut*/
   font-family: "Raleway", sans-serif;
+  font-weight: normal;
   font-size:13px;
 }
 header{
@@ -41,32 +41,34 @@ header h1{
 }
 .search{
   border-radius: 1em;
-  border: 2px solid black;
+ /* border: 2px solid black;*/
   height:3em;
   width:400px;
   margin-top:1.5em;
   font-weight: bold;
   font-size: 1.2em;
   display:flex;
-  justify-content: space-between;
+/*  justify-content: space-between;*/
 }
 .location{
   background-color: #F2F2F2;
   height:100%;
   width:3em;
   border-radius:1em 0em 0em 1em;
-  border-right: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .searchInput{
+  width: 100%;
   display: flex;
-  align-items: center;
+  padding-left: 1em;
+  /*align-items: center;*/
   font-weight: bold;
 }
 .searchText{
   background-color:#0065FC;
+  border-color: #0065FC;
   color:#fff;
   height:100%;
   border-radius:0em 1em 1em 0em;
@@ -86,7 +88,8 @@ header h1{
 }   
 .insideFilters{
   height:3em;
-  margin-right:1.5em;
+  margin-right:1.3em;
+  /*border: 2px solid black;*/
   border-radius: 2em;
   display:flex;
   justify-content: center;
@@ -164,10 +167,10 @@ article{
   flex-wrap:wrap;
   justify-content: space-between; 
   align-content: space-between; 
-  background-color: #F2F2F2
+  background-color: #F2F2F2;
 }
 .insideLabel{
-  width:200px;
+  width:14.20vw;
   height:165px;
   background-color: #fff;
   border: 5px solid #FFF;
@@ -175,6 +178,8 @@ article{
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
+  box-shadow: 0 0 16px #0000002e; 
+
 }
 .insideLabel:active,.asideInsideLabel:active,.section2InsideLabel:active
 {
@@ -215,6 +220,8 @@ aside{
   border: 5px solid #FFF;
   border-radius: 15px;
   margin-bottom: 5%;
+  box-shadow: 0 0 16px #0000002e; 
+
 }
 .asidePhoto{
   height:100%;
@@ -256,38 +263,43 @@ aside{
   box-shadow: 0 0 16px #0000002e; 
 }
 .section2Photo1{
-  width:21.3vw;
-  height:52.55vh;
+  width:21.30vw;
+  height: 320px;
   border-radius:15px 15px 0px 0px;
   object-fit: cover;
 }
 .section2Photo2{
-  width:21.3vw;
-  height:23.38vh;
+  width:21.30vw;
+  height:145px;
   border-radius:15px 15px 0px 0px;
   object-fit: cover;
 }
 .section2Photo3{
-  width:21.3vw;
-  height:15.6vh;
+  width:21.30vw;
+  height:95px;
   border-radius:15px 15px 0px 0px;
+  object-fit: cover;
+}
+.section2Photo4{
+  width:21.30vw;
+  height:115px;
   object-fit: cover;
 }
 .section2Photo5{
-  width:21.3vw;
-  height:18.89vh;
+  width:21.30vw;
+  height:125px;
   border-radius:15px 15px 0px 0px;
-  object-fit: cover;
 }
-.section2Photo6{
-  width:21.3vw;
-  height:20.53vh;
-  border-radius:15px 15px 0px 0px;
   object-fit: cover;
+  border-radius:15px 15px 0px 0px;
+  height:125px;
+  width:300px;
+.section2Photo5{
 }
 .section2Texte{
+  /*width:21.30vw;*/
   height:55px;
-  padding-left: 25px;
+  padding-left: 2.5vw;
   display:flex;
   align-items: center;
 }
@@ -327,7 +339,7 @@ ul{
 }
 /*-- telephones --*/
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 750px)
 {
   body{
     /*  display:inline;*/
@@ -396,30 +408,55 @@ ul{
   }
   .insideFilters{
   margin-bottom: 1.5em;
-
-}
+  }
+  section{
+    padding: 0em 0em 0em 0em;
+  } 
 .section1{
   display:flex;
   flex-direction: column-reverse;
 }
+article h2{
+  padding: 0em 2em 0em 2em;
+
+}
 .articleLabel{
+  padding: 0em 2em 0em 2em;
 
   height:100%;
+  background-color: #fff;
 }
 .insideLabel,.asideInsideLabel,.section2InsideLabel{
   width:320px;
   height:195px;
   margin-bottom: 10px;
 }
-article,aside,.activitiesLabel{
+article{
   width:100%;
+  background-color: #fff;
   padding: 0px;
+  border-radius: 0px;
+  margin-left: 0%;
+  margin-bottom: 1em;
+}
+aside{
+  width:100%;
+  padding: 0em 2em 0em 2em;
   border-radius: 0px;
   background-color: #F2F2F2;
   margin-left: 0%;
   margin-bottom: 1em;
 }
+.activitiesLabel{
+  width:100%;
+  padding: 0px;
+  border-radius: 0px;
+  background-color: #fff;
+  margin-left: 0%;
+  margin-bottom: 1em;
+}
 .section2{
+  padding: 0em 2em 0em 2em;
   
 }
 .activitiesLabel{
@@ -429,7 +466,23 @@ article,aside,.activitiesLabel{
   width:320px;
   height:190px;
 }
-.section2Photo{
+.section2Photo1{
+  width:100%;
+  height: 140px;
+}
+.section2Photo2{
+  width:100%;
+  height: 140px;
+}
+.section2Photo3{
+  width:100%;
+  height: 140px;
+}
+.section2Photo4{
+  width:100%;
+  height: 140px;
+}
+.section2Photo5{
   width:100%;
   height: 140px;
 }
