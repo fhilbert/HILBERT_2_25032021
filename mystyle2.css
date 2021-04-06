@@ -251,6 +251,8 @@ aside {
 }
 .asideText {
 	padding: 10px;
+	line-height: 1.5em;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -383,7 +385,8 @@ ul {
 		justify-content: center;
 	}
 	.navSubscribe {
-		display:inline;
+		display:inline-block;
+		height:33px;
 		position:absolute; 
 		top:20px;
 		right:20px;
@@ -405,6 +408,7 @@ ul {
 		color: #fff;
 		height: 100%;
 		width: 4em;
+		margin-left: -0.5em;
 		border-radius: 13px;
 		display: flex;
 		align-items: center;
@@ -429,7 +433,6 @@ ul {
 		background-color: #fff;
 	}
 	.insideLabel,
-	.asideInsideLabel,
 	.section2InsideLabel {
 		width: 320px;
 		height: 195px;
@@ -451,6 +454,12 @@ ul {
 		margin-left: 0%;
 		margin-bottom: 1em;
 	}
+	.asideInsideLabel{
+		width: 320px;
+		height: 145px;
+		margin-bottom: 10px;
+	}
+
 	.activitiesLabel {
 		width: 100%;
 		padding: 0px;
@@ -492,4 +501,21 @@ ul {
 	footer {
 		display: block;
 	}
+}
+@media screen and (max-width: 420px) {
+	.insideLabel,
+	.section2InsideLabel {
+		width: 280px;
+		height: 175px;
+		margin-bottom: 10px;
+	}
+	.asideInsideLabel{
+		width: 280px;
+		height: 120px;
+		margin-bottom: 10px;
+
+	}
+	
+
+
 }
