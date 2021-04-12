@@ -6,7 +6,7 @@
     <title>RESERVIA</title>
     <meta name="description" content="Roughly 155 characters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="mystyle2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/6c4bf069e4.js" crossorigin="anonymous"></script>
@@ -30,7 +30,7 @@
         </div>
         <div class="search">
             <div class="location"><i class="fas fa-map-marker-alt"> </i></div>
-            <input class="searchInput" value="Marseille,France">
+            <input class="searchInput" value="Marseille,France" type="text">
             <input type="submit" class="searchText" value="Rechercher">
             <i id="search" class="fas fa-search"></i>
         </div>
@@ -55,12 +55,12 @@
         </div>
         <!-- Information-->
         <div class="information">
-            <div class="logoInformation"><i class="far fa-info"> </i></div>
+            <div class="logoInformation"><i class="fas fa-info" aria-hidden="true"> </i></div>
             <div class="infoText">Plus de 500 logements sont disponibles dans cette ville</div>
         </div>
     </header>
     <!-- SECTION 1-->
-    <section class="section1">
+    <main class="main1">
         <article id="hebergements">
             <h2>Hébergements à Marseille</h2>
             <div class="articleLabel">
@@ -218,7 +218,7 @@
             </div>
         </aside>
         <!-- SECTION 2-->
-    </section>
+    </main>
     <section class="section2">
         <h2 id="activities">Activités à Marseille</h2>
         <div class="activitiesLabel">

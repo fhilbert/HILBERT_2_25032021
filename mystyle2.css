@@ -1,4 +1,5 @@
 body {
+	margin:0;
 	font-family: "Raleway", sans-serif;
 	font-size: 13px;
 	font-weight: normal;
@@ -24,6 +25,7 @@ nav {
 	align-items: flex-end;
 }
 nav a {
+	padding-bottom: 22px;
 	height:100%;
 	color: black;
 	text-decoration: none;
@@ -148,7 +150,7 @@ header h1 {
 	max-width: 600px;
 }
 .logoInformation {
-	background-color: rgb(220, 236, 253);
+	background-color: #deebff;
 	border: 2px solid black;
 	width: 1.5em;
 	height: 1.5em;
@@ -160,12 +162,12 @@ header h1 {
 	margin-right: 1em;
 }
 .ligne2,.infoText{
-	font-size:1.05em;
+	font-size:1.2em;
 }
-section {
+main {
 	padding: 0em 1.5em 0em 1.5em;
 }
-.section1 {
+.main1 {
 	margin-top: 3em;
 	display: flex;
 	margin-bottom: 3em;
@@ -194,7 +196,7 @@ article {
 	background-color: #fff;
 	border: 5px solid #fff;
 	border-radius: 15px;
-	margin: 0em 1em 1em 0em;
+	margin: 0em 1em 4em 0em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -358,11 +360,17 @@ ul {
 	body {
 		width: 100%;
 	}
+	header{
+		padding: 0em 0em 0em 0em;
+
+	}
 	#logo {
 		margin-bottom: 1em;
+		padding: 0em 1.5em 0em 1.5em;
 	}
 	.top {
 		display: inline;
+
 	}
 	nav {
 		width: 100%;
@@ -386,7 +394,7 @@ ul {
 	}
 	.navSubscribe {
 		display:inline-block;
-		height:33px;
+		height:10px;
 		position:absolute; 
 		top:20px;
 		right:20px;
@@ -396,7 +404,13 @@ ul {
 		border-top: 3px solid transparent;
 		border-bottom: 3px solid #0065fc;
 	}
+	.hebergement{
+		padding: 0em 1.5em 0em 1.5em;
+
+
+	}
 	.search {
+		padding: 1.5em 1.5em 0em 1.5em;
 		max-width: 320px;
 		width:90%;
 		}
@@ -408,19 +422,27 @@ ul {
 		color: #fff;
 		height: 100%;
 		width: 4em;
-		margin-left: -0.5em;
+		margin-left: -0.7em;
 		border-radius: 13px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
+	.filters {
+		padding: 0em 0em 0em 1.5em;
+	}
+
 	.titleFilters {
 		width:100%;
 	}
-	section {
+	.information{
+		padding: 0em 1.5em 0em 1.5em;
+
+	}
+	main {
 		padding: 0em 0em 0em 0em;
 	}	
-	.section1 {
+	.main1 {
 		display: flex;
 		flex-direction: column-reverse;
 	}
@@ -503,16 +525,18 @@ ul {
 	}
 }
 @media screen and (max-width: 420px) {
+	body {
+		width: 100%;
+	}
 	.insideLabel,
 	.section2InsideLabel {
-		width: 280px;
+		width: 95%;
 		height: 195px;
-		margin-bottom: 10px;
 	}
+	.asideTitle,
 	.asideInsideLabel{
-		width: 280px;
+		width: 85%;
 		height: 120px;
-		margin-bottom: 10px;
 
 	}
 	
