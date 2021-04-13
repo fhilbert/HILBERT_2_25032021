@@ -76,7 +76,7 @@ header h1 {
 	display: flex;
 	margin: 0;
 	border-color: #f2f2f2;
-	border: 2px solid #d9d9d9;
+	border: 1px solid #d9d9d9;
 	border-left-style: none;
 	border-right-style: none;
 	font-size: 1.2em;
@@ -85,7 +85,8 @@ header h1 {
 }
 .searchText {
 	background-color: #0065fc;
-	border-color: #0065fc;
+	/* border-color: #0065fc; */
+	border:none;
 	color: #fff;
 	font-size: 1.2em;
 	height: 100%;
@@ -135,6 +136,7 @@ header h1 {
 	align-items: center;
 }
 .logo {
+	z-index: 9;
 	background-color:#deebff;
 	border: 2px solid #deebff;
 	width: 2.4em;
@@ -220,7 +222,7 @@ aside {
 	margin-left: 2em;
 	padding: 0px 45px 0px 45px;
 }
-.asideLabel {
+.aside {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -350,7 +352,7 @@ ul {
 
 @media screen and (max-width: 974px) {
 	body {
-		width: 100%;
+		/* width: 100%; */
 	}
 	header{
 		padding: 0em 0em 0em 0em;
@@ -460,6 +462,14 @@ ul {
 		background-color: #f2f2f2;
 		margin-left: 0;
 	}
+	.asideLabel{
+		height:100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+
+	}
 	.asideInsideLabel{
 		width: 320px;
 		height: 145px;
@@ -508,9 +518,11 @@ ul {
 		display: block;
 	}
 }
+
+/*
 @media screen and (max-width: 420px) {
 	body {
-		width: 100%;
+		/* width: 100%; 
 	}
 	.insideLabel,
 	.section2InsideLabel {
@@ -525,3 +537,4 @@ ul {
 		height: 120px;
 	}
 }
+*/
