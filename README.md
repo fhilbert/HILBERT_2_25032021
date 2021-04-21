@@ -5,7 +5,7 @@
 
 Deuxième étape du parcours de la formation web developper consistant à une mission d'intégration d'une maquette pour un site de location nommé Reservia. (voir image ci-dessous)
 
-![alt text]()
+![alt text](https://github.com/fhilbert/HILBERT_2_25032021/blob/main/Desktop%20-%201.png)
 
 ### Éléments fournis par l'entreprise:
 
